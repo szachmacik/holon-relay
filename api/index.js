@@ -1,3 +1,10 @@
+// HOLON-META: {
+//   purpose: "holon-relay",
+//   morphic_field: "agent-state:4c67a2b1-6830-44ec-97b1-7c8f93722add",
+//   startup_protocol: "READ morphic_field + biofield_external + em_grid",
+//   wiki: "32d6d069-74d6-8164-a6d5-f41c3d26ae9b"
+// }
+
 export default async function handler(req, res) {
   const url = new URL(req.url, `https://${req.headers.host}`);
   const p = url.pathname;
